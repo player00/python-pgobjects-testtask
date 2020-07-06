@@ -1,4 +1,4 @@
-from pages.BaseApp import BasePage
+from pages.baseapp import BasePage
 from selenium.webdriver.common.by import By
 
 class MyAccountLocators:

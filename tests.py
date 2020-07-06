@@ -1,6 +1,6 @@
-from pages.MyStorePage import MyStoreHelper
-from pages.LoginPage import LoginHelper
-from pages.MyAccountPage import MyAccountHelper
+from pages.mystorepage import MyStoreHelper
+from pages.loginpage import LoginHelper
+from pages.myaccountpage import MyAccountHelper
 from users import *
 
 def test_login(browser):
