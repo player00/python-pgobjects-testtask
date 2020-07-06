@@ -1,6 +1,6 @@
-from pages.my_store import MyStoreHelper
 from pages.login import LoginHelper
 from pages.my_account import MyAccountHelper
+from pages.my_store import MyStoreHelper
 from users import VALID_USER_1
 
 
