@@ -1,4 +1,4 @@
-from pages.base_app import BasePage
+from pages.base_page import BasePage
 from selenium.webdriver.common.by import By
 from users import User
     
