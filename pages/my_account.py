@@ -7,8 +7,11 @@ class MyAccountLocators:
 
 class MyAccountHelper(BasePage):
 
+
     def get_user_info(self):
         return self.find_element(MyAccountLocators.LOCATOR_USER_INFO_SPAN, time=2).text
 
+
     def get_page_title(self):
-        return self.find_element(MyAccountLocators.LOCATOR_PAGE_HEADING, time=2).text
+        return self.find_element(MyAccountLocators.LOCATOR_PAGE_TITLE, time=2).text
+        

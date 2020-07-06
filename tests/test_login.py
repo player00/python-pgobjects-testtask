@@ -3,6 +3,7 @@ from pages.login import LoginHelper
 from pages.my_account import MyAccountHelper
 from users import VALID_USER_1
 
+
 def test_successful_login(browser):
     my_store_page = MyStoreHelper(browser)
     my_store_page.go_to_site()
@@ -11,4 +12,3 @@ def test_successful_login(browser):
     login_page.login(VALID_USER_1)
     my_account_page = MyAccountHelper(browser)
     assert my_account_page.get_page_title() == "MY ACCOUNT"
-
