@@ -1,7 +1,7 @@
 from pages.my_store import MyStoreHelper
 from pages.login import LoginHelper
 from pages.my_account import MyAccountHelper
-from users import *
+from users import VALID_USER_1
 
 def test_successful_login(browser):
     my_store_page = MyStoreHelper(browser)
