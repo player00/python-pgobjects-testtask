@@ -10,5 +10,5 @@ def test_successful_login(browser):
     login_page = LoginHelper(browser)
     login_page.login(VALID_USER_1)
     my_account_page = MyAccountHelper(browser)
-    assert my_account_page.get_page_heading() == "MY ACCOUNT"
+    assert my_account_page.get_page_title() == "MY ACCOUNT"
 
