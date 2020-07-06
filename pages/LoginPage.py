@@ -6,6 +6,7 @@ class LoginUsers:
         "email": "seleniumisgood@mail.com",
         "password": "123456"
     }
+    
 class LoginLocators:
     LOCATOR_EMAIL_FIELD = (By.ID, "email")
     LOCATOR_PASSWORD_FIELD = (By.ID, "passwd")
