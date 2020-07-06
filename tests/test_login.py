@@ -1,9 +1,9 @@
-from pages.mystorepage import MyStoreHelper
-from pages.loginpage import LoginHelper
-from pages.myaccountpage import MyAccountHelper
+from pages.my_store import MyStoreHelper
+from pages.login import LoginHelper
+from pages.my_account import MyAccountHelper
 from users import *
 
-def test_login(browser):
+def test_successful_login(browser):
     my_store_page = MyStoreHelper(browser)
     my_store_page.go_to_site()
     my_store_page.click_sign_in_button()
