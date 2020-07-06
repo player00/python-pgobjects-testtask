@@ -1,11 +1,6 @@
 from pages.baseapp import BasePage
 from selenium.webdriver.common.by import By
-
-class LoginUsers:
-    USER_1 = {
-        "email": "seleniumisgood@mail.com",
-        "password": "123456"
-    }
+from users import User
     
 class LoginLocators:
     LOCATOR_EMAIL_FIELD = (By.ID, "email")
@@ -14,13 +9,13 @@ class LoginLocators:
 
 class LoginHelper(BasePage):
     
-    def enter_email(self, email):
+    def enter_email(self, email: str):
         email_field = self.find_element(LoginLocators.LOCATOR_EMAIL_FIELD)
         email_field.click()
         email_field.send_keys(email)
         return email_field
     
-    def enter_password(self, password):
+    def enter_password(self, password: str):
         password_field = self.find_element(LoginLocators.LOCATOR_PASSWORD_FIELD)
         password_field.click()
         password_field.send_keys(password)
@@ -28,3 +23,8 @@ class LoginHelper(BasePage):
 
     def click_sign_in_button(self):
         return self.find_element(LoginLocators.LOCATOR_SIGN_IN_BUTTON, time=2).click()
+
+    def login(self, user: User):
+        self.enter_email(user.email)
+        self.enter_password(user.password)
+        self.click_sign_in_button()
